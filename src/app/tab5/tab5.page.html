@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title> Settings </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+   <!-- User settings-->
+  <ion-item-group>
+    <ion-item-divider color="secondary" class="bold">User Settings</ion-item-divider>
+    <ion-item>
+      <ion-label> Notifications? </ion-label>
+      <ion-toggle checked="true"></ion-toggle>
+    </ion-item>
+  </ion-item-group>
+  <!-- App settings-->
+  <ion-item-group>
+    <ion-item-divider color="secondary" class="bold">App Settings</ion-item-divider>
+    <ion-item>
+      <span> Clear Private Data </span>
+    </ion-item>
+    <ion-item>
+      <ion-label> Push Notifications? </ion-label>
+      <ion-toggle checked="false"></ion-toggle>
+    </ion-item>
+    <ion-item>
+      <span> Privacy Policy </span>
+    </ion-item>
+
+    <ion-item>
+      <span> Terms & Agreement </span>
+    </ion-item>
+
+    <ion-item>
+      <span> App info </span>
+    </ion-item>
+
+  </ion-item-group>  
+
+  <!--sign out button-->
+  <ion-button color="warning" (click)="logout()">LOG OUT </ion-button>
+
+</ion-content>

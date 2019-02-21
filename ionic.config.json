@@ -1,0 +1,7 @@
+{
+  "name": "amanidomestics",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
