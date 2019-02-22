@@ -9,3 +9,11 @@
 @import '~@ionic/angular/css/text-alignment.css';
 @import '~@ionic/angular/css/text-transformation.css';
 @import '~@ionic/angular/css/flex-utils.css';
+
+// center an element
+.center-me {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    width: 50%;
+}

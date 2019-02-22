@@ -1,9 +1,52 @@
 <ion-header>
-  <ion-toolbar>
+  <ion-toolbar color="primary">
     <ion-title> Chat with Amani </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content padding>
+  <ion-list noline>
+  
+      <ion-item >
+        <ion-avatar slot="start">
+          <img src="/assets/images/avatar.png">
+        </ion-avatar>
+        <ion-label> Hi </ion-label>
+      </ion-item>
+      <ion-item>
+        <ion-avatar slot="end">
+          <img src="/assets/images/avatar.png">
+        </ion-avatar>
+        <ion-label> Hi </ion-label>
+      </ion-item><ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/images/avatar.png">
+        </ion-avatar>
+        <ion-label> I was wondering when <br> I can submit a survey. </ion-label>
+      </ion-item><ion-item>
+        <ion-avatar slot="end">
+          <img src="/assets/images/avatar.png">
+        </ion-avatar>
+        <ion-label> It will be soon thanks <br> for being part of <br> improving  our services </ion-label>
+      </ion-item>
+    
+      <ion-item>
+        <ion-avatar slot="start">
+          <img src="/assets/images/avatar.png">
+        </ion-avatar>
+        <ion-label> Alright then will <br> be waiting thanks <br>you are the best! </ion-label>
+      </ion-item>
+  </ion-list>
+
+  <ion-footer no-border>
+    <ion-toolbar color="primary">
+      <ion-textarea (keyup.enter)="doSend()" [(ngModel)]="input" placeholder="Enter your message" name="message" fill="round" ></ion-textarea>
+      <ion-button  (click)="doSend()" ion-button icon-only slot="end">
+          <ion-icon name="send" color="light"></ion-icon>
+      </ion-button>
+    </ion-toolbar>
+  
+  </ion-footer>
+
 
 </ion-content>

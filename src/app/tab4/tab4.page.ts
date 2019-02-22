@@ -1,5 +1,6 @@
+import { MessageMocks } from './../mocks/messageMocks';
+import { Message } from './../models/message';
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-tab4',
   templateUrl: './tab4.page.html',
@@ -7,9 +8,22 @@ import { Component, OnInit } from '@angular/core';
 })
 export class Tab4Page implements OnInit {
 
-  constructor() { }
+  public messages = MessageMocks;
+  public input = '';
+
+
+  constructor(  ) { }
 
   ngOnInit() {
+  }
+
+
+
+
+  doSend() {
+     if (this.input.length > 0) {
+      const message: Message = new Message();
+    }
   }
 
 }
